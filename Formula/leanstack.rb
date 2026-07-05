@@ -7,20 +7,20 @@ class Leanstack < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/getappz/leanstack/releases/download/v1.0.0/leanstack-aarch64-apple-darwin.tar.gz"
-      sha256 "122a318623b097dfb80137c88c76d69db2c59db49fc8bb4979f337df1d9b6246"
+      sha256 "946e9ffef005e9f3dd09d16711698c67f99b04dd9f392ad956c274a8339a060e"
     else
       url "https://github.com/getappz/leanstack/releases/download/v1.0.0/leanstack-x86_64-apple-darwin.tar.gz"
-      sha256 "401895f406da76cf713da20630571427de4c28cc259008288a124d188e7fdc55"
+      sha256 "9b4ecb11fec08c744f159b63bdc72f6cb2ea0ec8a200fab87d442f457bbee8b9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/getappz/leanstack/releases/download/v1.0.0/leanstack-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3062170bd8b1be1da7b4a4fc13ef8475f5533156a90d27828c245a23d87ec129"
+      sha256 "3b8bcd4e5b57dee1a157007b5e8949f9783f539e63f14d834bbbee656d96b174"
     else
       url "https://github.com/getappz/leanstack/releases/download/v1.0.0/leanstack-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "31db43dd7431e2db8a98fb0a3f21deafbe22861772038d7eb84a7902e19dec2e"
+      sha256 "6ca5a574633f072fb3838d6ea4055b56ef6a2662d6b50888283c31f3df6145ba"
     end
   end
 
