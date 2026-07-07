@@ -1,26 +1,26 @@
 class Agentflare < Formula
   desc "Optimize AI CLI agents for cost and performance"
   homepage "https://github.com/getappz/agentflare"
-  version "1.0.2"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/getappz/agentflare/releases/download/v1.0.2/agentflare-aarch64-apple-darwin.tar.gz"
-      sha256 "fd3c807b7f4ea5172a1cea3fb792efec0bec20f084ebe6d7d8bdeafde32693ca"
+      url "https://github.com/getappz/agentflare/releases/download/v1.1.0/agentflare-aarch64-apple-darwin.tar.gz"
+      sha256 "1678f888b3c3dd7ec8099907cfc5635ac035b6c8679d507e878b0eecf5e9b5eb"
     else
-      url "https://github.com/getappz/agentflare/releases/download/v1.0.2/agentflare-x86_64-apple-darwin.tar.gz"
-      sha256 "ee41174eef3460e63f1a24a47caa8df7cc5ff53d1c5ffa46baf1a04c4b493cfb"
+      url "https://github.com/getappz/agentflare/releases/download/v1.1.0/agentflare-x86_64-apple-darwin.tar.gz"
+      sha256 "3bdadbc16e512947ef028dba32be98c5fcc5f9c0a7466cfbeb45aaf71c85421f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/getappz/agentflare/releases/download/v1.0.2/agentflare-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "82e21af558aabdfb1e186242a8b23fff108c7319dcd5a2f555d9d71bfbd36273"
+      url "https://github.com/getappz/agentflare/releases/download/v1.1.0/agentflare-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "33163bf2926cbb9426e577a3be4f71ec8f45c81f8bb4ed98d559f6add6da7034"
     else
-      url "https://github.com/getappz/agentflare/releases/download/v1.0.2/agentflare-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2c74a4a17023fd5effbbf02c8b5cebb8823500cc3c74c327cd095a525fac676f"
+      url "https://github.com/getappz/agentflare/releases/download/v1.1.0/agentflare-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a2aea0dbe937fd2dbd63ff61ebff36f3f3dea5aee7b138d7d608d97971ee60a4"
     end
   end
 
@@ -29,6 +29,6 @@ class Agentflare < Formula
   end
 
   test do
-    assert_match "agentflare 1.0.2", shell_output("#{bin}/agentflare --version")
+    assert_match "agentflare 1.1.0", shell_output("#{bin}/agentflare --version")
   end
 end
