@@ -1,26 +1,26 @@
 class Agentflare < Formula
   desc "Run AI coding agents efficiently, and coordinate more than one of them."
   homepage "https://github.com/getappz/agentflare"
-  version "1.5.0"
+  version "1.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/getappz/agentflare/releases/download/v1.5.0/agentflare-aarch64-apple-darwin.tar.gz"
-      sha256 "425e4a2e18cc5eb49278d146167aaa080b5cb4e0bb2bcbbcef096a00662fa006"
+      url "https://github.com/getappz/agentflare/releases/download/v1.6.0/agentflare-aarch64-apple-darwin.tar.gz"
+      sha256 "d87326a161db0a5299ff068a5bdd5f28502e4b9e0712ec586aebc416f187e069"
     else
-      url "https://github.com/getappz/agentflare/releases/download/v1.5.0/agentflare-x86_64-apple-darwin.tar.gz"
-      sha256 "e3b80308db5e596ff5a38ee68fc3a0b06d45d4b66ce521a05ababda5d8a02365"
+      url "https://github.com/getappz/agentflare/releases/download/v1.6.0/agentflare-x86_64-apple-darwin.tar.gz"
+      sha256 "5deba029843abf464d6a5931b23d69bafd35db681e9cdeb8abd56354d9df4c99"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/getappz/agentflare/releases/download/v1.5.0/agentflare-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d48608eaae7b4828981f57174fc5ec86cbf6300accd87d1be39e4bcfb277f9cc"
+      url "https://github.com/getappz/agentflare/releases/download/v1.6.0/agentflare-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "62eb89a5cdbdfdc5731b51f637c468a23402a8fa21a62ba180dab49cba242145"
     else
-      url "https://github.com/getappz/agentflare/releases/download/v1.5.0/agentflare-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f8f4a24a71366ce6ba24ee3f07bfa0d69929b2756dfe099cf6dbf12be37233a3"
+      url "https://github.com/getappz/agentflare/releases/download/v1.6.0/agentflare-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b24a50b984ce04c89f1d3b94223b66166266e5ebfb1e18bd6002f274d3969638"
     end
   end
 
@@ -29,6 +29,6 @@ class Agentflare < Formula
   end
 
   test do
-    assert_match "agentflare 1.5.0", shell_output("#{bin}/agentflare --version")
+    assert_match "agentflare 1.6.0", shell_output("#{bin}/agentflare --version")
   end
 end
